@@ -1,0 +1,15 @@
+<div layout="column" layout-fill>
+  <header>
+    <app-head title="$ctrl.title"></app-head>
+  </header>
+
+  <main flex layout="row" fxLayoutAlign=" center"  >
+      <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2"  md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+          xxxxxxxxxxxxxxxxxxx
+          <app-side-nav></app-side-nav>
+        </md-sidenav>
+    <ui-view layout="column" ></ui-view>
+  </main>
+
+  <app-footer> </app-footer>
+</div>

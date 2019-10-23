@@ -1,0 +1,29 @@
+<div class="jumbotron text-center">
+  <h1>Main Page</h1>
+  <p>From here we will create sub menus</p>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-xs-12 well" style="background:yellow">
+      <div ui-view="head"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3 well">
+      <div ui-view="left"></div>
+    </div>
+    <div class="col-xs-6 well">
+      <div ui-view="middle"></div>
+    </div>
+    <div class="col-xs-3 well">
+      <div ui-view="right"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 well">
+      <div ui-view="bottom"></div>
+      <div sidebar-directive></div>
+    </div>
+  </div>
+</div>

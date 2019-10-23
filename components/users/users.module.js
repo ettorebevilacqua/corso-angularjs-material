@@ -1,0 +1,1 @@
+const app = angular.module('appUsers', ['ui.router', 'ngMaterial']);

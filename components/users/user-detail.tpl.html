@@ -1,0 +1,16 @@
+<h1>dettaglio </h1> {{$ctrl.userId}}
+
+{{$ctrl.user |json}}
+
+   <h3>User {{ $ctrl.user.id }}</h3>
+    
+    Name: <input ng-model="$ctrl.user.first_name"><br>
+    
+    Address: <input type="text" ng-model="$ctrl.user.last_name"><br>
+    Phone: <input type="text" ng-model="$ctrl.user.phone"><br>
+    Email: <input type="text" ng-model="$ctrl.user.email"><br>
+    Company: <input type="text" ng-model="$ctrl.user.avatar"><br>
+ 
+    
+    <button type="button" ng-click="$ctrl.onUserUpdated({ user: $ctrl.user })">Update user</button>
+    <button type="button" ng-click="$ctrl.onEditCancelled()">Cancel</button>
